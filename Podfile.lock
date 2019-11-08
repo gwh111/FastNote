@@ -1,0 +1,33 @@
+PODS:
+  - bench_ios (2.0.0):
+    - bench_ios/CC_CoreFoundation (= 2.0.0)
+    - bench_ios/CC_Foundation (= 2.0.0)
+    - bench_ios/CC_Function (= 2.0.0)
+    - bench_ios/CC_Kit (= 2.0.0)
+    - bench_ios/CC_Lib (= 2.0.0)
+    - bench_ios/debugPlugin (= 2.0.0)
+  - bench_ios/CC_CoreFoundation (2.0.0)
+  - bench_ios/CC_Foundation (2.0.0)
+  - bench_ios/CC_Function (2.0.0)
+  - bench_ios/CC_Kit (2.0.0)
+  - bench_ios/CC_Lib (2.0.0)
+  - bench_ios/debugPlugin (2.0.0)
+
+DEPENDENCIES:
+  - "bench_ios (from `https://apple@huored.gicp.net:8088/svn/bench_ios/trunk/bench_ios_net/bench_ios`)"
+
+EXTERNAL SOURCES:
+  bench_ios:
+    :svn: "https://apple@huored.gicp.net:8088/svn/bench_ios/trunk/bench_ios_net/bench_ios"
+
+CHECKOUT OPTIONS:
+  bench_ios:
+    :revision: '1196'
+    :svn: "https://apple@huored.gicp.net:8088/svn/bench_ios/trunk/bench_ios_net/bench_ios"
+
+SPEC CHECKSUMS:
+  bench_ios: a7a346f5b8268cc5ecd6261fe18deef14a52211b
+
+PODFILE CHECKSUM: c416bd9010e5b5a37d5df07e8287b2208be6d4c8
+
+COCOAPODS: 1.8.3

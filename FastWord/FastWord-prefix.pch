@@ -1,0 +1,22 @@
+//
+//  FastWord-prefix.pch
+//  FastWord
+//
+//  Created by gwh on 2019/11/4.
+//  Copyright © 2019 gwh. All rights reserved.
+//
+
+#ifndef FastWord_pch
+#define FastWord_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "ccs.h"
+
+#import "Language.h"
+#import "NoteStore.h"
+#import "NoteModel.h"
+#import "ShareData.h"
+#import "SettingManage.h"
+
+#endif /* FastWord_pch */

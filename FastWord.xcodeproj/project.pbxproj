@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A3DD1E48EDAD3F7DD545850 /* libPods-FastWord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5603F010FF706A31C60B57A4 /* libPods-FastWord.a */; };
+		D804507A2370338F00926402 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D80450792370338F00926402 /* main.m */; };
+		D804507D2370338F00926402 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D804507C2370338F00926402 /* AppDelegate.m */; };
+		D804507F2370338F00926402 /* FastWord-prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = D804507E2370338F00926402 /* FastWord-prefix.pch */; };
+		D80450822370338F00926402 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80450812370338F00926402 /* HomeViewController.m */; };
+		D80450852370338F00926402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80450832370338F00926402 /* Main.storyboard */; };
+		D80450872370339100926402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80450862370339100926402 /* Assets.xcassets */; };
+		D804508A2370339100926402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80450882370339100926402 /* LaunchScreen.storyboard */; };
+		D80450952370339100926402 /* FastWordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D80450942370339100926402 /* FastWordTests.m */; };
+		D80450A02370339100926402 /* FastWordUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D804509F2370339100926402 /* FastWordUITests.m */; };
+		D80450AF2370352000926402 /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80450AE2370352000926402 /* InputViewController.m */; };
+		D86FA9432375347C0009FCAA /* ink.png in Resources */ = {isa = PBXBuildFile; fileRef = D86FA9412375347C0009FCAA /* ink.png */; };
+		D86FA9442375347C0009FCAA /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = D86FA9422375347C0009FCAA /* 120.png */; };
+		D8AD585523727ACC00B3E9A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8AD585723727ACC00B3E9A8 /* InfoPlist.strings */; };
+		D8AD585B23727B4700B3E9A8 /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD585A23727B4700B3E9A8 /* Language.m */; };
+		D8AD585E2372816B00B3E9A8 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD585D2372816B00B3E9A8 /* AboutViewController.m */; };
+		D8AD58612372AB6500B3E9A8 /* NoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD58602372AB6500B3E9A8 /* NoteStore.m */; };
+		D8AD58642372AEAC00B3E9A8 /* NoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD58632372AEAC00B3E9A8 /* NoteModel.m */; };
+		D8AD58672372B27700B3E9A8 /* ShareData.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD58662372B27700B3E9A8 /* ShareData.m */; };
+		D8AD586A2373D48100B3E9A8 /* ManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD58692373D48100B3E9A8 /* ManageViewController.m */; };
+		D8AD586D2373EEEF00B3E9A8 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD586C2373EEEF00B3E9A8 /* SettingViewController.m */; };
+		D8AD58702374091200B3E9A8 /* ManageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD586F2374091200B3E9A8 /* ManageTableViewCell.m */; };
+		D8AD58732374183E00B3E9A8 /* SettingManage.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD58722374183E00B3E9A8 /* SettingManage.m */; };
+		D8AD58792375142700B3E9A8 /* MoreLib.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD58752375142700B3E9A8 /* MoreLib.m */; };
+		D8AD587A2375142700B3E9A8 /* MoreLibV.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD58772375142700B3E9A8 /* MoreLibV.m */; };
+		D8AD587C237518AC00B3E9A8 /* fadeToBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = D8AD587B237518AC00B3E9A8 /* fadeToBottom.png */; };
+		D8AD587E237518C500B3E9A8 /* fadeToUp.png in Resources */ = {isa = PBXBuildFile; fileRef = D8AD587D237518C500B3E9A8 /* fadeToUp.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D80450912370339100926402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D804506E2370338F00926402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D80450752370338F00926402;
+			remoteInfo = FastWord;
+		};
+		D804509C2370339100926402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D804506E2370338F00926402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D80450752370338F00926402;
+			remoteInfo = FastWord;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32822042E12A8C13F1CC150B /* Pods-FastWord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastWord.debug.xcconfig"; path = "Target Support Files/Pods-FastWord/Pods-FastWord.debug.xcconfig"; sourceTree = "<group>"; };
+		5603F010FF706A31C60B57A4 /* libPods-FastWord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FastWord.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C0847E0AA31D7F435D89EFD /* Pods-FastWord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastWord.release.xcconfig"; path = "Target Support Files/Pods-FastWord/Pods-FastWord.release.xcconfig"; sourceTree = "<group>"; };
+		D80450762370338F00926402 /* FastWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80450792370338F00926402 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D804507B2370338F00926402 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D804507C2370338F00926402 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D804507E2370338F00926402 /* FastWord-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FastWord-prefix.pch"; sourceTree = "<group>"; };
+		D80450802370338F00926402 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D80450812370338F00926402 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		D80450842370338F00926402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D80450862370339100926402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D80450892370339100926402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D80450902370339100926402 /* FastWordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastWordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80450942370339100926402 /* FastWordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastWordTests.m; sourceTree = "<group>"; };
+		D80450962370339100926402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D804509B2370339100926402 /* FastWordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastWordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D804509F2370339100926402 /* FastWordUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastWordUITests.m; sourceTree = "<group>"; };
+		D80450A12370339100926402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80450AD2370352000926402 /* InputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
+		D80450AE2370352000926402 /* InputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
+		D86FA9412375347C0009FCAA /* ink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ink.png; sourceTree = "<group>"; };
+		D86FA9422375347C0009FCAA /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
+		D8AD584E237278BE00B3E9A8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8AD585123727AA500B3E9A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		D8AD585223727AA500B3E9A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		D8AD585623727ACC00B3E9A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D8AD585823727AD000B3E9A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8AD585923727B4700B3E9A8 /* Language.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Language.h; sourceTree = "<group>"; };
+		D8AD585A23727B4700B3E9A8 /* Language.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Language.m; sourceTree = "<group>"; };
+		D8AD585C2372816B00B3E9A8 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		D8AD585D2372816B00B3E9A8 /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		D8AD585F2372AB6500B3E9A8 /* NoteStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteStore.h; sourceTree = "<group>"; };
+		D8AD58602372AB6500B3E9A8 /* NoteStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteStore.m; sourceTree = "<group>"; };
+		D8AD58622372AEAC00B3E9A8 /* NoteModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteModel.h; sourceTree = "<group>"; };
+		D8AD58632372AEAC00B3E9A8 /* NoteModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteModel.m; sourceTree = "<group>"; };
+		D8AD58652372B27700B3E9A8 /* ShareData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareData.h; sourceTree = "<group>"; };
+		D8AD58662372B27700B3E9A8 /* ShareData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareData.m; sourceTree = "<group>"; };
+		D8AD58682373D48100B3E9A8 /* ManageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManageViewController.h; sourceTree = "<group>"; };
+		D8AD58692373D48100B3E9A8 /* ManageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManageViewController.m; sourceTree = "<group>"; };
+		D8AD586B2373EEEF00B3E9A8 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		D8AD586C2373EEEF00B3E9A8 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		D8AD586E2374091200B3E9A8 /* ManageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManageTableViewCell.h; sourceTree = "<group>"; };
+		D8AD586F2374091200B3E9A8 /* ManageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManageTableViewCell.m; sourceTree = "<group>"; };
+		D8AD58712374183E00B3E9A8 /* SettingManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingManage.h; sourceTree = "<group>"; };
+		D8AD58722374183E00B3E9A8 /* SettingManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingManage.m; sourceTree = "<group>"; };
+		D8AD58752375142700B3E9A8 /* MoreLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreLib.m; sourceTree = "<group>"; };
+		D8AD58762375142700B3E9A8 /* MoreLibV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreLibV.h; sourceTree = "<group>"; };
+		D8AD58772375142700B3E9A8 /* MoreLibV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreLibV.m; sourceTree = "<group>"; };
+		D8AD58782375142700B3E9A8 /* MoreLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreLib.h; sourceTree = "<group>"; };
+		D8AD587B237518AC00B3E9A8 /* fadeToBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fadeToBottom.png; sourceTree = "<group>"; };
+		D8AD587D237518C500B3E9A8 /* fadeToUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fadeToUp.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D80450732370338F00926402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A3DD1E48EDAD3F7DD545850 /* libPods-FastWord.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D804508D2370339100926402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80450982370339100926402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36E7AC818733096A3D0DC550 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5603F010FF706A31C60B57A4 /* libPods-FastWord.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37C0530EFDAC89C86666AF50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32822042E12A8C13F1CC150B /* Pods-FastWord.debug.xcconfig */,
+				6C0847E0AA31D7F435D89EFD /* Pods-FastWord.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D804506D2370338F00926402 = {
+			isa = PBXGroup;
+			children = (
+				D86FA9402375347C0009FCAA /* Resources */,
+				D80450782370338F00926402 /* FastWord */,
+				D80450932370339100926402 /* FastWordTests */,
+				D804509E2370339100926402 /* FastWordUITests */,
+				D80450772370338F00926402 /* Products */,
+				37C0530EFDAC89C86666AF50 /* Pods */,
+				36E7AC818733096A3D0DC550 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D80450772370338F00926402 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D80450762370338F00926402 /* FastWord.app */,
+				D80450902370339100926402 /* FastWordTests.xctest */,
+				D804509B2370339100926402 /* FastWordUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D80450782370338F00926402 /* FastWord */ = {
+			isa = PBXGroup;
+			children = (
+				D80450792370338F00926402 /* main.m */,
+				D8AD58742375141000B3E9A8 /* recommand */,
+				D804507B2370338F00926402 /* AppDelegate.h */,
+				D804507C2370338F00926402 /* AppDelegate.m */,
+				D804507E2370338F00926402 /* FastWord-prefix.pch */,
+				D8AD585923727B4700B3E9A8 /* Language.h */,
+				D8AD585A23727B4700B3E9A8 /* Language.m */,
+				D8AD58652372B27700B3E9A8 /* ShareData.h */,
+				D8AD58662372B27700B3E9A8 /* ShareData.m */,
+				D8AD58712374183E00B3E9A8 /* SettingManage.h */,
+				D8AD58722374183E00B3E9A8 /* SettingManage.m */,
+				D8AD58622372AEAC00B3E9A8 /* NoteModel.h */,
+				D8AD58632372AEAC00B3E9A8 /* NoteModel.m */,
+				D8AD585F2372AB6500B3E9A8 /* NoteStore.h */,
+				D8AD58602372AB6500B3E9A8 /* NoteStore.m */,
+				D80450802370338F00926402 /* HomeViewController.h */,
+				D80450812370338F00926402 /* HomeViewController.m */,
+				D80450AD2370352000926402 /* InputViewController.h */,
+				D80450AE2370352000926402 /* InputViewController.m */,
+				D8AD585C2372816B00B3E9A8 /* AboutViewController.h */,
+				D8AD585D2372816B00B3E9A8 /* AboutViewController.m */,
+				D8AD58682373D48100B3E9A8 /* ManageViewController.h */,
+				D8AD58692373D48100B3E9A8 /* ManageViewController.m */,
+				D8AD586B2373EEEF00B3E9A8 /* SettingViewController.h */,
+				D8AD586C2373EEEF00B3E9A8 /* SettingViewController.m */,
+				D8AD586E2374091200B3E9A8 /* ManageTableViewCell.h */,
+				D8AD586F2374091200B3E9A8 /* ManageTableViewCell.m */,
+				D80450832370338F00926402 /* Main.storyboard */,
+				D80450862370339100926402 /* Assets.xcassets */,
+				D80450882370339100926402 /* LaunchScreen.storyboard */,
+				D8AD584E237278BE00B3E9A8 /* Info.plist */,
+				D8AD585723727ACC00B3E9A8 /* InfoPlist.strings */,
+			);
+			path = FastWord;
+			sourceTree = "<group>";
+		};
+		D80450932370339100926402 /* FastWordTests */ = {
+			isa = PBXGroup;
+			children = (
+				D80450942370339100926402 /* FastWordTests.m */,
+				D80450962370339100926402 /* Info.plist */,
+			);
+			path = FastWordTests;
+			sourceTree = "<group>";
+		};
+		D804509E2370339100926402 /* FastWordUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D804509F2370339100926402 /* FastWordUITests.m */,
+				D80450A12370339100926402 /* Info.plist */,
+			);
+			path = FastWordUITests;
+			sourceTree = "<group>";
+		};
+		D86FA9402375347C0009FCAA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D86FA9412375347C0009FCAA /* ink.png */,
+				D86FA9422375347C0009FCAA /* 120.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D8AD58742375141000B3E9A8 /* recommand */ = {
+			isa = PBXGroup;
+			children = (
+				D8AD587D237518C500B3E9A8 /* fadeToUp.png */,
+				D8AD587B237518AC00B3E9A8 /* fadeToBottom.png */,
+				D8AD58782375142700B3E9A8 /* MoreLib.h */,
+				D8AD58752375142700B3E9A8 /* MoreLib.m */,
+				D8AD58762375142700B3E9A8 /* MoreLibV.h */,
+				D8AD58772375142700B3E9A8 /* MoreLibV.m */,
+			);
+			path = recommand;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D80450752370338F00926402 /* FastWord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D80450A42370339100926402 /* Build configuration list for PBXNativeTarget "FastWord" */;
+			buildPhases = (
+				4880A233875F7DFC5B8D5355 /* [CP] Check Pods Manifest.lock */,
+				D80450722370338F00926402 /* Sources */,
+				D80450732370338F00926402 /* Frameworks */,
+				D80450742370338F00926402 /* Resources */,
+				333ACA150687C9A302626E6C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastWord;
+			productName = FastWord;
+			productReference = D80450762370338F00926402 /* FastWord.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D804508F2370339100926402 /* FastWordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D80450A72370339100926402 /* Build configuration list for PBXNativeTarget "FastWordTests" */;
+			buildPhases = (
+				D804508C2370339100926402 /* Sources */,
+				D804508D2370339100926402 /* Frameworks */,
+				D804508E2370339100926402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D80450922370339100926402 /* PBXTargetDependency */,
+			);
+			name = FastWordTests;
+			productName = FastWordTests;
+			productReference = D80450902370339100926402 /* FastWordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D804509A2370339100926402 /* FastWordUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D80450AA2370339100926402 /* Build configuration list for PBXNativeTarget "FastWordUITests" */;
+			buildPhases = (
+				D80450972370339100926402 /* Sources */,
+				D80450982370339100926402 /* Frameworks */,
+				D80450992370339100926402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D804509D2370339100926402 /* PBXTargetDependency */,
+			);
+			name = FastWordUITests;
+			productName = FastWordUITests;
+			productReference = D804509B2370339100926402 /* FastWordUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D804506E2370338F00926402 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = gwh;
+				TargetAttributes = {
+					D80450752370338F00926402 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					D804508F2370339100926402 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = D80450752370338F00926402;
+					};
+					D804509A2370339100926402 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = D80450752370338F00926402;
+					};
+				};
+			};
+			buildConfigurationList = D80450712370338F00926402 /* Build configuration list for PBXProject "FastWord" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = D804506D2370338F00926402;
+			productRefGroup = D80450772370338F00926402 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D80450752370338F00926402 /* FastWord */,
+				D804508F2370339100926402 /* FastWordTests */,
+				D804509A2370339100926402 /* FastWordUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D80450742370338F00926402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D804507F2370338F00926402 /* FastWord-prefix.pch in Resources */,
+				D8AD587E237518C500B3E9A8 /* fadeToUp.png in Resources */,
+				D8AD587C237518AC00B3E9A8 /* fadeToBottom.png in Resources */,
+				D86FA9442375347C0009FCAA /* 120.png in Resources */,
+				D804508A2370339100926402 /* LaunchScreen.storyboard in Resources */,
+				D86FA9432375347C0009FCAA /* ink.png in Resources */,
+				D80450872370339100926402 /* Assets.xcassets in Resources */,
+				D80450852370338F00926402 /* Main.storyboard in Resources */,
+				D8AD585523727ACC00B3E9A8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D804508E2370339100926402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80450992370339100926402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		333ACA150687C9A302626E6C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FastWord/Pods-FastWord-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FastWord/Pods-FastWord-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FastWord/Pods-FastWord-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4880A233875F7DFC5B8D5355 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FastWord-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D80450722370338F00926402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8AD58612372AB6500B3E9A8 /* NoteStore.m in Sources */,
+				D8AD58672372B27700B3E9A8 /* ShareData.m in Sources */,
+				D8AD585E2372816B00B3E9A8 /* AboutViewController.m in Sources */,
+				D8AD585B23727B4700B3E9A8 /* Language.m in Sources */,
+				D8AD586A2373D48100B3E9A8 /* ManageViewController.m in Sources */,
+				D8AD587A2375142700B3E9A8 /* MoreLibV.m in Sources */,
+				D8AD58642372AEAC00B3E9A8 /* NoteModel.m in Sources */,
+				D8AD58732374183E00B3E9A8 /* SettingManage.m in Sources */,
+				D80450822370338F00926402 /* HomeViewController.m in Sources */,
+				D8AD58792375142700B3E9A8 /* MoreLib.m in Sources */,
+				D804507D2370338F00926402 /* AppDelegate.m in Sources */,
+				D8AD58702374091200B3E9A8 /* ManageTableViewCell.m in Sources */,
+				D804507A2370338F00926402 /* main.m in Sources */,
+				D8AD586D2373EEEF00B3E9A8 /* SettingViewController.m in Sources */,
+				D80450AF2370352000926402 /* InputViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D804508C2370339100926402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80450952370339100926402 /* FastWordTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80450972370339100926402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80450A02370339100926402 /* FastWordUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D80450922370339100926402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D80450752370338F00926402 /* FastWord */;
+			targetProxy = D80450912370339100926402 /* PBXContainerItemProxy */;
+		};
+		D804509D2370339100926402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D80450752370338F00926402 /* FastWord */;
+			targetProxy = D804509C2370339100926402 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D80450832370338F00926402 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D80450842370338F00926402 /* Base */,
+				D8AD585123727AA500B3E9A8 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D80450882370339100926402 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D80450892370339100926402 /* Base */,
+				D8AD585223727AA500B3E9A8 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D8AD585723727ACC00B3E9A8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8AD585623727ACC00B3E9A8 /* zh-Hans */,
+				D8AD585823727AD000B3E9A8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D80450A22370339100926402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D80450A32370339100926402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D80450A52370339100926402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32822042E12A8C13F1CC150B /* Pods-FastWord.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.2;
+				DEVELOPMENT_TEAM = V988GE98EW;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FastWord/FastWord-prefix.pch";
+				INFOPLIST_FILE = FastWord/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gwh.mine.FastWord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D80450A62370339100926402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C0847E0AA31D7F435D89EFD /* Pods-FastWord.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.2;
+				DEVELOPMENT_TEAM = V988GE98EW;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FastWord/FastWord-prefix.pch";
+				INFOPLIST_FILE = FastWord/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gwh.mine.FastWord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D80450A82370339100926402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FastWordTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gwh.mine.FastWordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastWord.app/FastWord";
+			};
+			name = Debug;
+		};
+		D80450A92370339100926402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FastWordTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gwh.mine.FastWordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastWord.app/FastWord";
+			};
+			name = Release;
+		};
+		D80450AB2370339100926402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FastWordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gwh.mine.FastWordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FastWord;
+			};
+			name = Debug;
+		};
+		D80450AC2370339100926402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FastWordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gwh.mine.FastWordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FastWord;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D80450712370338F00926402 /* Build configuration list for PBXProject "FastWord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80450A22370339100926402 /* Debug */,
+				D80450A32370339100926402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D80450A42370339100926402 /* Build configuration list for PBXNativeTarget "FastWord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80450A52370339100926402 /* Debug */,
+				D80450A62370339100926402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D80450A72370339100926402 /* Build configuration list for PBXNativeTarget "FastWordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80450A82370339100926402 /* Debug */,
+				D80450A92370339100926402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D80450AA2370339100926402 /* Build configuration list for PBXNativeTarget "FastWordUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80450AB2370339100926402 /* Debug */,
+				D80450AC2370339100926402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D804506E2370338F00926402 /* Project object */;
+}
