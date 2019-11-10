@@ -34,8 +34,10 @@
     
     self.cc_title = @"📝...";
     
+    float MENU_HEIGHT = RH(100);
+    
     menuView = ccs.View
-    .cc_size(WIDTH(), RH(100))
+    .cc_size(WIDTH(), MENU_HEIGHT)
     .cc_addToView(self);
     
     menuGroup = ccs.LabelGroup;
@@ -106,8 +108,10 @@
     .cc_text(dateStr)
     .cc_addToView(self);
     
+    float TEXT_TOP = RH(30);
+    
     textView = ccs.TextView
-    .cc_frame(RH(5), RH(30), WIDTH() - RH(10), self.cc_displayView.height - textView.top - RH(50))
+    .cc_frame(RH(5), TEXT_TOP, WIDTH() - RH(10), self.cc_displayView.height - textView.top - MENU_HEIGHT - TEXT_TOP)
     .cc_textColor(UIColor.blackColor)
 //    .cc_backgroundColor(UIColor.yellowColor)
     .cc_font(RF(SettingManage.shared.fontSize))
@@ -117,11 +121,10 @@
     if (_contentModel.content.length > 0) {
         textView.text = _contentModel.content;
     }
-    
+
+    menuView.top = textView.bottom;
     if (!isUpdate) {
         [textView becomeFirstResponder];
-    } else {
-        [self textViewDidEndEditing:textView];
     }
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardAction:) name:UIKeyboardWillShowNotification object:nil];

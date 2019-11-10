@@ -109,8 +109,8 @@
         
         [ccs gotoMain:^{
             
-            float plusHeight = SettingManage.shared.fontSizeIndex * RH(10);
-            float plusMargin = SettingManage.shared.fontSizeIndex * RH(5);
+            float plusHeight = SettingManage.shared.fontSizeIndex * RH(5);
+            float plusMargin = SettingManage.shared.fontSizeIndex * RH(7);
             
             [self->noteGroup updateType:CCLabelAlignmentTypeLeft width:WIDTH() stepWidth:RH(5) sideX:RH(5) sideY:RH(5) itemHeight:RH(35) + plusHeight margin:RH(10) + plusMargin];
             [self->noteGroup updateLabels:summaryList selected:nil];

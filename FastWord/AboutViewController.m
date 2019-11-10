@@ -17,7 +17,7 @@
 
 - (void)cc_viewWillLoad {
    
-    self.cc_title = @"关于";
+    self.cc_title = Language.aboutText;
 }
 
 - (void)cc_viewDidLoad {
@@ -52,7 +52,7 @@
     .cc_borderColor(UIColor.blackColor)
     .cc_borderWidth(1)
     .cc_addToView(self);
-    [rateButton cc_addTappedOnceDelay:.1 withBlock:^(CC_Button *btn) {
+    [rateButton cc_addTappedOnceDelay:1 withBlock:^(CC_Button *btn) {
         [self rate];
     }];
     

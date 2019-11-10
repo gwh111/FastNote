@@ -11,16 +11,16 @@
 @implementation Language
 
 + (int)isChinese {
-    if ([ccs defaultValueForKey:@"isChinese"]) {
-        return [[ccs defaultValueForKey:@"isChinese"] intValue];
-    }
+//    if ([ccs defaultValueForKey:@"isChinese"]) {
+//        return [[ccs defaultValueForKey:@"isChinese"] intValue];
+//    }
     NSArray *languages = [NSLocale preferredLanguages];
     NSString *currentLanguage = [languages objectAtIndex:0];
     if ([currentLanguage containsString:@"zh"]) {
-        [ccs saveDefaultKey:@"isChinese" value:@"1"];
+//        [ccs saveDefaultKey:@"isChinese" value:@"1"];
         return 1;
     }
-    [ccs saveDefaultKey:@"isChinese" value:@"0"];
+//    [ccs saveDefaultKey:@"isChinese" value:@"0"];
     return 0;
 }
 
@@ -28,11 +28,11 @@
     if ([self isChinese]) {
         return @"我们的定位是 ‘快速’，‘简单’，‘易用’。\n\n我搜索了很多笔记应用发现它们都不能比这个应用更快记录。它们有的会在启动后显示广告页，有的会弹出使用指导，还有的展示一些华丽的图片，这都不是我想要的。有的时候我只是想快速记录一些东西，越快越好。\n\n所以我做了这款应用。没有弹窗广告，没有使用指南，没有华丽的图片。在app启动后，所有的代码都为快速准备输入界面而执行，尽可能快速让你记录。稍后也可做一些编辑使笔记更漂亮。\n\n因为我们也没有弹窗打分，如果你能在你方便的时候打分，我们非常感谢~";
     }
-    return @"Our main goal is 'Fast', 'Easy' and 'Clear'. \n\nI have searched many note apps but none of them can go to input page as fast as this one. When open an app, someone will pop an AD page, someone will show guid, or display some gorgeous picture, this will make me furious. Because sometimes I just want to write something down as soon as possible. \n\nSo I write this app, no Ad pop up, no guid, no gorgeous picture, onece you open the app, all the code is running for prepare for you an input environment. So that you can write something down as soon as possible. Later you can do some configure or settings to make it beautiful. \n\nAnd the code is open source on '";
+    return @"Our main goal is 'Fast', 'Easy' and 'Clear'. \n\nI have searched many note apps but none of them can go to input page as fast as this one. When open an app, someone will pop an AD page, someone will show guid, or display some gorgeous picture, this will make me furious. Because sometimes I just want to write something down as soon as possible. \n\nSo I build this app, no Ad pop up, no guid, no gorgeous picture, once you open the app, all the code is running for prepare for you an input environment. So that you can write something down as soon as possible. Later you can do some configure or settings to make it beautiful. \n\nAnd the code is open source on '";
 }
 
 + (NSString *)aboutLink {
-    return @"https://github.com/gwh111/bench_ios";
+    return @"https://github.com/gwh111/FastNote";
 }
 
 + (NSString *)aboutText2 {
@@ -85,7 +85,7 @@
     if ([self isChinese]) {
         return @"文字底色";
     }
-    return @"Color";
+    return @"Text";
 }
 
 + (NSString *)cancelText {
@@ -106,7 +106,7 @@
     if ([self isChinese]) {
         return @"完成";
     }
-    return @"Finish";
+    return @"Done";
 }
 
 + (NSString *)youWriteNotingText {
