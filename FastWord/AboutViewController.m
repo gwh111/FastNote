@@ -83,7 +83,7 @@
         [ccs showAltOn:self title:Language.thanksText msg:Language.helpRateText bts:@[Language.laterText, Language.gotoRateText] block:^(int index, NSString *name) {
             if (index == 1) {
 
-                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/app/id1487045573"]];
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/app/id807032955"]];
             }
         }];
     } else if (rateType == 1) {
