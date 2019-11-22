@@ -76,6 +76,16 @@
     
     [self presentNew];
     
+    if (@available(iOS 13.0, *)) {
+        UIUserInterfaceStyle mode = UITraitCollection.currentTraitCollection.userInterfaceStyle;
+        if (mode == UIUserInterfaceStyleDark) {
+            
+            self.cc_navigationBar.backgroundColor = RGBA(100, 100, 100, .2);
+        } else if (mode == UIUserInterfaceStyleLight) {
+            
+        }
+    }
+    
 }
 
 - (void)cc_viewWillAppear {

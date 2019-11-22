@@ -36,6 +36,7 @@
     textView
     .cc_frame(RH(5), 0, WIDTH() - RH(10), self.cc_displayView.height - RH(40))
     .cc_textColor(UIColor.darkGrayColor)
+    .cc_backgroundColor(UIColor.clearColor)
     .cc_font(RF(16))
     .cc_editable(NO)
     .cc_delegate(self)
@@ -56,6 +57,14 @@
         [self rate];
     }];
     
+    if (@available(iOS 13.0, *)) {
+        UIUserInterfaceStyle mode = UITraitCollection.currentTraitCollection.userInterfaceStyle;
+        if (mode == UIUserInterfaceStyleDark) {
+            self.cc_navigationBar.backgroundColor = RGBA(100, 100, 100, .2);
+        } else if (mode == UIUserInterfaceStyleLight) {
+            
+        }
+    }
 }
 
 - (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange {

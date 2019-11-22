@@ -112,8 +112,8 @@
     
     textView = ccs.TextView
     .cc_frame(RH(5), TEXT_TOP, WIDTH() - RH(10), self.cc_displayView.height - textView.top - MENU_HEIGHT - TEXT_TOP)
-    .cc_textColor(UIColor.blackColor)
-//    .cc_backgroundColor(UIColor.yellowColor)
+    .cc_textColor(HEX(#000000))
+    .cc_backgroundColor(HEXA(#000000, 0))
     .cc_font(RF(SettingManage.shared.fontSize))
     .cc_delegate(self)
     .cc_addToView(self);
@@ -166,6 +166,14 @@
 - (void)cc_viewDidLoad {
 	 // Do any additional setup after loading the view.
 
+    if (@available(iOS 13.0, *)) {
+        UIUserInterfaceStyle mode = UITraitCollection.currentTraitCollection.userInterfaceStyle;
+        if (mode == UIUserInterfaceStyleDark) {
+            self.cc_navigationBar.backgroundColor = RGBA(100, 100, 100, .2);
+        } else if (mode == UIUserInterfaceStyleLight) {
+            
+        }
+    }
 }
 
 - (CC_Button *)menuButton {
