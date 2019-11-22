@@ -9,7 +9,6 @@
  $ pod install
  ```
  
- <img src="https://github.com/gwh111/FastNote/blob/master/Resources/s1.png" width="320">
-  <img src="https://github.com/gwh111/FastNote/blob/master/Resources/s2.png" width="320">
+ <img src="https://github.com/gwh111/FastNote/blob/master/Resources/s1.png" width="320"><img src="https://github.com/gwh111/FastNote/blob/master/Resources/s2.png" width="320">
  
  
