@@ -14,6 +14,9 @@
 //    if ([ccs defaultValueForKey:@"isChinese"]) {
 //        return [[ccs defaultValueForKey:@"isChinese"] intValue];
 //    }
+    if (TARGET_IPHONE_SIMULATOR == 1) {
+//        return 1;
+    }
     NSArray *languages = [NSLocale preferredLanguages];
     NSString *currentLanguage = [languages objectAtIndex:0];
     if ([currentLanguage containsString:@"zh"]) {
@@ -41,9 +44,9 @@
 
 + (NSString *)newText {
     if ([self isChinese]) {
-        return @"新建一个";
+        return @"新建";
     }
-    return @"Create new one";
+    return @"New";
 }
 
 + (NSString *)settingText {
@@ -76,16 +79,16 @@
 
 + (NSString *)fastNoteText {
     if ([self isChinese]) {
-        return @"快速记录📝";
+        return @"快捷标签";
     }
-    return @"Fast Note 📝";
+    return @"Faster Input";
 }
 
 + (NSString *)noteBackColorText {
     if ([self isChinese]) {
-        return @"文字底色";
+        return @"色块";
     }
-    return @"Text";
+    return @"Color";
 }
 
 + (NSString *)cancelText {

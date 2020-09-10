@@ -31,7 +31,7 @@ static NSString *HIDDEN_BORDER = @"hiddenBorder";
         SettingManage.shared.maxTextCount = [[ccs defaultValueForKey:MAX_TEXT_COUNT]integerValue];
         
         if (![ccs defaultValueForKey:FONT_SIZE]) {
-            [ccs saveDefaultKey:FONT_SIZE value:@(16)];
+            [ccs saveDefaultKey:FONT_SIZE value:@(20)];
         }
         SettingManage.shared.fontSize = [[ccs defaultValueForKey:FONT_SIZE]integerValue];
         
@@ -41,14 +41,14 @@ static NSString *HIDDEN_BORDER = @"hiddenBorder";
         SettingManage.shared.deleteAsk = [[ccs defaultValueForKey:DELETE_ASK]integerValue];
         
         if (![ccs defaultValueForKey:HIDDEN_BORDER]) {
-            [ccs saveDefaultKey:HIDDEN_BORDER value:@(NO)];
+            [ccs saveDefaultKey:HIDDEN_BORDER value:@(YES)];
         }
         SettingManage.shared.hiddenBorder = [[ccs defaultValueForKey:HIDDEN_BORDER]integerValue];
     }];
 }
 
 - (NSUInteger)MAX_TEXT_COUNT {
-    STATIC_MAX_TEXT_COUNT = 45;
+    STATIC_MAX_TEXT_COUNT = 55;
     if (Language.isChinese) {
         STATIC_MAX_TEXT_COUNT = 20;
     }

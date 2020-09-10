@@ -24,15 +24,13 @@
     CC_Button *sampleButton;
 }
 
-@property (nonatomic, retain) NoteModel *contentModel;
-
 @end
 
 @implementation InputViewController
 
 - (void)cc_viewWillLoad {
     
-    self.cc_title = @"📝...";
+    self.cc_title = Language.fastNoteText;
     
     float MENU_HEIGHT = RH(100);
     
@@ -53,7 +51,31 @@
     sampleButton.right = WIDTH() - RH(10);
     
     noteColors = ShareData.noteColors;
-    if (_summaryModel) {
+    
+    if (_contentModel) {
+        
+        colorIndex = _contentModel.colorIndex;
+        
+        isUpdate = NO;
+        
+        NSString *createTime = ccs.nowTimeTimestamp;
+        _summaryModel.createTime = createTime;
+        _contentModel.createTime = createTime;
+        
+        NSMutableArray *textList = ccs.mutArray;
+        NSMutableArray *selectList = ccs.mutArray;
+        for (int i = 0; i < noteColors.count; i++) {
+            if (i == _summaryModel.colorIndex) {
+                [selectList addObject:@"1"];
+            } else {
+                [selectList addObject:@"0"];
+            }
+            [textList addObject:@""];
+        }
+        [menuGroup updateLabels:textList selected:selectList];
+        
+        [sampleButton setBackgroundColor:noteColors[_summaryModel.colorIndex]];
+    } else if (_summaryModel) {
         
         _contentModel = [NoteStore getContentModelWithSummaryModel:_summaryModel];
         isUpdate = YES;
@@ -120,6 +142,14 @@
     
     if (_contentModel.content.length > 0) {
         textView.text = _contentModel.content;
+    } else {
+        NSString *content = [[UIPasteboard generalPasteboard] string];
+        if (content.length > 0) {
+            
+            textView.text = content;
+            UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+            [pasteboard setString:@""];
+        }
     }
 
     menuView.top = textView.bottom;
@@ -161,6 +191,9 @@
     finishButton.right = WIDTH() - RH(5);
     reviewButton.right = finishButton.left - RH(5);
     
+    [cancelButton cc_setShadow:UIColor.grayColor];
+    [reviewButton cc_setShadow:UIColor.grayColor];
+    [finishButton cc_setShadow:UIColor.grayColor];
 }
 
 - (void)cc_viewDidLoad {
@@ -177,13 +210,15 @@
 }
 
 - (CC_Button *)menuButton {
-    return ccs.Button
+    CC_Button *button = ccs.Button
     .cc_setTitleColorForState(UIColor.blackColor, UIControlStateNormal)
     .cc_font(RF(16))
     .cc_cornerRadius(4)
-    .cc_borderColor(UIColor.blackColor)
-    .cc_borderWidth(1)
+//    .cc_borderColor(UIColor.blackColor)
+//    .cc_borderWidth(1)
+    .cc_backgroundColor(RGB(242, 242, 242))
     .cc_addToView(menuView);
+    return button;
 }
 
 - (void)labelGroup:(CC_LabelGroup *)group button:(UIButton *)button tappedAtIndex:(NSUInteger)index {
@@ -222,7 +257,7 @@
     [textView resignFirstResponder];
 
     _contentModel.content = content;
-    if (content.length > SettingManage.shared.MAX_TEXT_COUNT) {
+    if (content.length > 100) {
         content = [content substringToIndex:SettingManage.shared.MAX_TEXT_COUNT];
     }
     _summaryModel.summary = content;
@@ -262,9 +297,11 @@
         }
         
     } else {
-
-        button.cc_borderWidth(1);
-        button.cc_borderColor(UIColor.blackColor);
+//        button.cc_borderWidth(1);
+//        button.cc_borderColor(UIColor.blackColor);
+        button.backgroundColor = RGB(242, 242, 242);
+        button.titleLabel.font = RF(26);
+        button.hidden = YES;
     }
 }
 
@@ -278,7 +315,7 @@
     float height = [value CGRectValue].size.height;
     CCLOG(@"%f", height);
     
-    textView.height = self.cc_displayView.height - height - textView.top - RH(50);
+    textView.height = self.cc_displayView.height - height - textView.top - RH(60);
     
     if (ccs.safeBottom <= 0) {
         textView.height = textView.height - RH(50);
@@ -289,7 +326,7 @@
 
 - (void)textViewDidEndEditing:(UITextView *)textView {
     
-    textView.height = self.cc_displayView.height - textView.top - RH(50) - ccs.safeBottom;
+    textView.height = self.cc_displayView.height - textView.top - RH(60) - ccs.safeBottom;
     
     if (ccs.safeBottom <= 0) {
         textView.height = textView.height - RH(50);

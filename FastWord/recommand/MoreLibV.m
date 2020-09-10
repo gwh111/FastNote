@@ -102,7 +102,7 @@
     desT.selectable = NO;
     desT.font = RF(16);
     [popV addSubview:desT];
-    desT.text = @"xxx是一款xxx";
+    desT.text = @"刷新重新打开";
     
     NSDictionary *moreLib = [ccs sandboxPlistWithPath:@"moreLib"];
     if (moreLib) {

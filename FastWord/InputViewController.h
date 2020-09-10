@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface InputViewController : CC_ViewController
 
 @property (nonatomic, retain) NoteModel *summaryModel;
+@property (nonatomic, retain) NoteModel *contentModel;
 
 @end
 

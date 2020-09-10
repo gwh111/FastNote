@@ -19,4 +19,9 @@
 #import "ShareData.h"
 #import "SettingManage.h"
 
+#import "Data.h"
+
+#import <FMDB.h>
+#import "FMDatabaseAdditions.h"
+
 #endif /* FastWord_pch */

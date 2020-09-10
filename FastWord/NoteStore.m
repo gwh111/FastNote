@@ -14,6 +14,7 @@ static NSString *TABLE_SUMMARY = @"NotesSummary";
 static NSString *TABLE_CONTENT = @"NotesContent";
 
 + (NSArray *)getList {
+    return [ccs.dataBaseStore query:NoteModel.class where:nil orderBy:@"createTime" desc:YES limit:0 tableName:TABLE_SUMMARY];
     return [ccs.dataBaseStore query:NoteModel.class tableName:TABLE_SUMMARY];
 }
 
@@ -30,6 +31,8 @@ static NSString *TABLE_CONTENT = @"NotesContent";
 }
 
 + (void)updateSummaryModel:(NoteModel *)model {
+//    [self deleteSummaryModel:model];
+//    [self addSummaryModel:model];
     [ccs.dataBaseStore update:model where:[ccs string:@"createTime='%@'", model.createTime] tableName:TABLE_SUMMARY];
 }
 
@@ -42,6 +45,8 @@ static NSString *TABLE_CONTENT = @"NotesContent";
 }
 
 + (void)updateContentModel:(NoteModel *)model {
+//    [self deleteContentModel:model];
+//    [self addContentModel:model];
     [ccs.dataBaseStore update:model where:[ccs string:@"createTime='%@'", model.createTime] tableName:TABLE_CONTENT];
 }
 

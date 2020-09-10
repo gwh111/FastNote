@@ -2,5 +2,6 @@
 platform :ios, '8.0'
 
 target 'FastWord' do
-  pod 'bench_ios'
+  pod 'bench_ios', :svn => 'https://apple@huored.gicp.net:8088/svn/bench_ios/trunk/bench_ios_net/bench_ios'
+  pod 'FMDB'
 end

@@ -19,8 +19,11 @@
 		D80450952370339100926402 /* FastWordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D80450942370339100926402 /* FastWordTests.m */; };
 		D80450A02370339100926402 /* FastWordUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D804509F2370339100926402 /* FastWordUITests.m */; };
 		D80450AF2370352000926402 /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80450AE2370352000926402 /* InputViewController.m */; };
-		D86FA9432375347C0009FCAA /* ink.png in Resources */ = {isa = PBXBuildFile; fileRef = D86FA9412375347C0009FCAA /* ink.png */; };
 		D86FA9442375347C0009FCAA /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = D86FA9422375347C0009FCAA /* 120.png */; };
+		D8799B832407FB540013F0C8 /* KouZhaoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D8799B822407FB540013F0C8 /* KouZhaoVC.m */; };
+		D892C4E724DF7E23008F108B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = D892C4E624DF7E23008F108B /* File.swift */; };
+		D892C4E924DF7E94008F108B /* HWCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D892C4E824DF7E94008F108B /* HWCollectionViewFlowLayout.swift */; };
+		D892C4EB24DFBC35008F108B /* ItemCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D892C4EA24DFBC35008F108B /* ItemCollectionView.swift */; };
 		D8AD585523727ACC00B3E9A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8AD585723727ACC00B3E9A8 /* InfoPlist.strings */; };
 		D8AD585B23727B4700B3E9A8 /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD585A23727B4700B3E9A8 /* Language.m */; };
 		D8AD585E2372816B00B3E9A8 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD585D2372816B00B3E9A8 /* AboutViewController.m */; };
@@ -35,6 +38,8 @@
 		D8AD587A2375142700B3E9A8 /* MoreLibV.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD58772375142700B3E9A8 /* MoreLibV.m */; };
 		D8AD587C237518AC00B3E9A8 /* fadeToBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = D8AD587B237518AC00B3E9A8 /* fadeToBottom.png */; };
 		D8AD587E237518C500B3E9A8 /* fadeToUp.png in Resources */ = {isa = PBXBuildFile; fileRef = D8AD587D237518C500B3E9A8 /* fadeToUp.png */; };
+		D8EE18AC23EC29DF0089AD52 /* BiGuanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EE18AA23EC29DF0089AD52 /* BiGuanVC.m */; };
+		D8EE18AF23EC2A020089AD52 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EE18AE23EC2A010089AD52 /* Data.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,8 +82,13 @@
 		D80450A12370339100926402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D80450AD2370352000926402 /* InputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
 		D80450AE2370352000926402 /* InputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
-		D86FA9412375347C0009FCAA /* ink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ink.png; sourceTree = "<group>"; };
 		D86FA9422375347C0009FCAA /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
+		D8799B812407FB540013F0C8 /* KouZhaoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KouZhaoVC.h; sourceTree = "<group>"; };
+		D8799B822407FB540013F0C8 /* KouZhaoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KouZhaoVC.m; sourceTree = "<group>"; };
+		D892C4E524DF7E23008F108B /* FastWord-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FastWord-Bridging-Header.h"; sourceTree = "<group>"; };
+		D892C4E624DF7E23008F108B /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		D892C4E824DF7E94008F108B /* HWCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		D892C4EA24DFBC35008F108B /* ItemCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionView.swift; sourceTree = "<group>"; };
 		D8AD584E237278BE00B3E9A8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8AD585123727AA500B3E9A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		D8AD585223727AA500B3E9A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -108,6 +118,10 @@
 		D8AD58782375142700B3E9A8 /* MoreLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreLib.h; sourceTree = "<group>"; };
 		D8AD587B237518AC00B3E9A8 /* fadeToBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fadeToBottom.png; sourceTree = "<group>"; };
 		D8AD587D237518C500B3E9A8 /* fadeToUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fadeToUp.png; sourceTree = "<group>"; };
+		D8EE18AA23EC29DF0089AD52 /* BiGuanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiGuanVC.m; sourceTree = "<group>"; };
+		D8EE18AB23EC29DF0089AD52 /* BiGuanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiGuanVC.h; sourceTree = "<group>"; };
+		D8EE18AD23EC2A010089AD52 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		D8EE18AE23EC2A010089AD52 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +199,8 @@
 				D804507B2370338F00926402 /* AppDelegate.h */,
 				D804507C2370338F00926402 /* AppDelegate.m */,
 				D804507E2370338F00926402 /* FastWord-prefix.pch */,
+				D8EE18AD23EC2A010089AD52 /* Data.h */,
+				D8EE18AE23EC2A010089AD52 /* Data.m */,
 				D8AD585923727B4700B3E9A8 /* Language.h */,
 				D8AD585A23727B4700B3E9A8 /* Language.m */,
 				D8AD58652372B27700B3E9A8 /* ShareData.h */,
@@ -195,6 +211,10 @@
 				D8AD58632372AEAC00B3E9A8 /* NoteModel.m */,
 				D8AD585F2372AB6500B3E9A8 /* NoteStore.h */,
 				D8AD58602372AB6500B3E9A8 /* NoteStore.m */,
+				D8EE18AB23EC29DF0089AD52 /* BiGuanVC.h */,
+				D8EE18AA23EC29DF0089AD52 /* BiGuanVC.m */,
+				D8799B812407FB540013F0C8 /* KouZhaoVC.h */,
+				D8799B822407FB540013F0C8 /* KouZhaoVC.m */,
 				D80450802370338F00926402 /* HomeViewController.h */,
 				D80450812370338F00926402 /* HomeViewController.m */,
 				D80450AD2370352000926402 /* InputViewController.h */,
@@ -207,11 +227,15 @@
 				D8AD586C2373EEEF00B3E9A8 /* SettingViewController.m */,
 				D8AD586E2374091200B3E9A8 /* ManageTableViewCell.h */,
 				D8AD586F2374091200B3E9A8 /* ManageTableViewCell.m */,
+				D892C4EA24DFBC35008F108B /* ItemCollectionView.swift */,
+				D892C4E824DF7E94008F108B /* HWCollectionViewFlowLayout.swift */,
+				D892C4E624DF7E23008F108B /* File.swift */,
 				D80450832370338F00926402 /* Main.storyboard */,
 				D80450862370339100926402 /* Assets.xcassets */,
 				D80450882370339100926402 /* LaunchScreen.storyboard */,
 				D8AD584E237278BE00B3E9A8 /* Info.plist */,
 				D8AD585723727ACC00B3E9A8 /* InfoPlist.strings */,
+				D892C4E524DF7E23008F108B /* FastWord-Bridging-Header.h */,
 			);
 			path = FastWord;
 			sourceTree = "<group>";
@@ -237,7 +261,6 @@
 		D86FA9402375347C0009FCAA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D86FA9412375347C0009FCAA /* ink.png */,
 				D86FA9422375347C0009FCAA /* 120.png */,
 			);
 			path = Resources;
@@ -267,7 +290,7 @@
 				D80450722370338F00926402 /* Sources */,
 				D80450732370338F00926402 /* Frameworks */,
 				D80450742370338F00926402 /* Resources */,
-				333ACA150687C9A302626E6C /* [CP] Copy Pods Resources */,
+				B2B1E618BB3661CA01006A10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,6 +348,7 @@
 				TargetAttributes = {
 					D80450752370338F00926402 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1150;
 					};
 					D804508F2370339100926402 = {
 						CreatedOnToolsVersion = 11.0;
@@ -368,7 +392,6 @@
 				D8AD587C237518AC00B3E9A8 /* fadeToBottom.png in Resources */,
 				D86FA9442375347C0009FCAA /* 120.png in Resources */,
 				D804508A2370339100926402 /* LaunchScreen.storyboard in Resources */,
-				D86FA9432375347C0009FCAA /* ink.png in Resources */,
 				D80450872370339100926402 /* Assets.xcassets in Resources */,
 				D80450852370338F00926402 /* Main.storyboard in Resources */,
 				D8AD585523727ACC00B3E9A8 /* InfoPlist.strings in Resources */,
@@ -392,23 +415,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		333ACA150687C9A302626E6C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FastWord/Pods-FastWord-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FastWord/Pods-FastWord-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FastWord/Pods-FastWord-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4880A233875F7DFC5B8D5355 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -431,6 +437,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B2B1E618BB3661CA01006A10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FastWord/Pods-FastWord-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FastWord/Pods-FastWord-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FastWord/Pods-FastWord-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -438,20 +461,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8799B832407FB540013F0C8 /* KouZhaoVC.m in Sources */,
 				D8AD58612372AB6500B3E9A8 /* NoteStore.m in Sources */,
 				D8AD58672372B27700B3E9A8 /* ShareData.m in Sources */,
 				D8AD585E2372816B00B3E9A8 /* AboutViewController.m in Sources */,
 				D8AD585B23727B4700B3E9A8 /* Language.m in Sources */,
+				D8EE18AC23EC29DF0089AD52 /* BiGuanVC.m in Sources */,
 				D8AD586A2373D48100B3E9A8 /* ManageViewController.m in Sources */,
+				D892C4EB24DFBC35008F108B /* ItemCollectionView.swift in Sources */,
 				D8AD587A2375142700B3E9A8 /* MoreLibV.m in Sources */,
 				D8AD58642372AEAC00B3E9A8 /* NoteModel.m in Sources */,
 				D8AD58732374183E00B3E9A8 /* SettingManage.m in Sources */,
+				D892C4E924DF7E94008F108B /* HWCollectionViewFlowLayout.swift in Sources */,
 				D80450822370338F00926402 /* HomeViewController.m in Sources */,
 				D8AD58792375142700B3E9A8 /* MoreLib.m in Sources */,
 				D804507D2370338F00926402 /* AppDelegate.m in Sources */,
 				D8AD58702374091200B3E9A8 /* ManageTableViewCell.m in Sources */,
 				D804507A2370338F00926402 /* main.m in Sources */,
 				D8AD586D2373EEEF00B3E9A8 /* SettingViewController.m in Sources */,
+				D8EE18AF23EC2A020089AD52 /* Data.m in Sources */,
+				D892C4E724DF7E23008F108B /* File.swift in Sources */,
 				D80450AF2370352000926402 /* InputViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,8 +664,9 @@
 			baseConfigurationReference = 32822042E12A8C13F1CC150B /* Pods-FastWord.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0.2.1;
+				CURRENT_PROJECT_VERSION = 1.0.2.0;
 				DEVELOPMENT_TEAM = V988GE98EW;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FastWord/FastWord-prefix.pch";
 				INFOPLIST_FILE = FastWord/Info.plist;
@@ -644,9 +674,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = gwh.com.SecurityNotebook;
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gwh.mine.FastWord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FastWord/FastWord-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -656,8 +689,9 @@
 			baseConfigurationReference = 6C0847E0AA31D7F435D89EFD /* Pods-FastWord.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0.2.1;
+				CURRENT_PROJECT_VERSION = 1.0.2.0;
 				DEVELOPMENT_TEAM = V988GE98EW;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FastWord/FastWord-prefix.pch";
 				INFOPLIST_FILE = FastWord/Info.plist;
@@ -665,9 +699,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = gwh.com.SecurityNotebook;
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gwh.mine.FastWord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FastWord/FastWord-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -675,6 +711,7 @@
 		D80450A82370339100926402 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FastWordTests/Info.plist;
@@ -694,6 +731,7 @@
 		D80450A92370339100926402 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FastWordTests/Info.plist;
@@ -713,6 +751,7 @@
 		D80450AB2370339100926402 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FastWordUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -730,6 +769,7 @@
 		D80450AC2370339100926402 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FastWordUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

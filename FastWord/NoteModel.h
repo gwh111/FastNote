@@ -19,6 +19,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, retain) NSString *updateTime;
 @property (nonatomic, retain) NSString *createTime;
 
+@property (nonatomic, assign) float height;
+
+- (CGFloat)getStringHeightWithText:(NSString *)text font:(UIFont *)font viewWidth:(CGFloat)width;
+- (UIColor *)getColor;
+
 @end
 
 NS_ASSUME_NONNULL_END
