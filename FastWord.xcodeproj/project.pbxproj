@@ -38,7 +38,6 @@
 		D8AD587A2375142700B3E9A8 /* MoreLibV.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD58772375142700B3E9A8 /* MoreLibV.m */; };
 		D8AD587C237518AC00B3E9A8 /* fadeToBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = D8AD587B237518AC00B3E9A8 /* fadeToBottom.png */; };
 		D8AD587E237518C500B3E9A8 /* fadeToUp.png in Resources */ = {isa = PBXBuildFile; fileRef = D8AD587D237518C500B3E9A8 /* fadeToUp.png */; };
-		D8EE18AC23EC29DF0089AD52 /* BiGuanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EE18AA23EC29DF0089AD52 /* BiGuanVC.m */; };
 		D8EE18AF23EC2A020089AD52 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EE18AE23EC2A010089AD52 /* Data.m */; };
 /* End PBXBuildFile section */
 
@@ -118,8 +117,6 @@
 		D8AD58782375142700B3E9A8 /* MoreLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreLib.h; sourceTree = "<group>"; };
 		D8AD587B237518AC00B3E9A8 /* fadeToBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fadeToBottom.png; sourceTree = "<group>"; };
 		D8AD587D237518C500B3E9A8 /* fadeToUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fadeToUp.png; sourceTree = "<group>"; };
-		D8EE18AA23EC29DF0089AD52 /* BiGuanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiGuanVC.m; sourceTree = "<group>"; };
-		D8EE18AB23EC29DF0089AD52 /* BiGuanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiGuanVC.h; sourceTree = "<group>"; };
 		D8EE18AD23EC2A010089AD52 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		D8EE18AE23EC2A010089AD52 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,8 +208,6 @@
 				D8AD58632372AEAC00B3E9A8 /* NoteModel.m */,
 				D8AD585F2372AB6500B3E9A8 /* NoteStore.h */,
 				D8AD58602372AB6500B3E9A8 /* NoteStore.m */,
-				D8EE18AB23EC29DF0089AD52 /* BiGuanVC.h */,
-				D8EE18AA23EC29DF0089AD52 /* BiGuanVC.m */,
 				D8799B812407FB540013F0C8 /* KouZhaoVC.h */,
 				D8799B822407FB540013F0C8 /* KouZhaoVC.m */,
 				D80450802370338F00926402 /* HomeViewController.h */,
@@ -466,7 +461,6 @@
 				D8AD58672372B27700B3E9A8 /* ShareData.m in Sources */,
 				D8AD585E2372816B00B3E9A8 /* AboutViewController.m in Sources */,
 				D8AD585B23727B4700B3E9A8 /* Language.m in Sources */,
-				D8EE18AC23EC29DF0089AD52 /* BiGuanVC.m in Sources */,
 				D8AD586A2373D48100B3E9A8 /* ManageViewController.m in Sources */,
 				D892C4EB24DFBC35008F108B /* ItemCollectionView.swift in Sources */,
 				D8AD587A2375142700B3E9A8 /* MoreLibV.m in Sources */,

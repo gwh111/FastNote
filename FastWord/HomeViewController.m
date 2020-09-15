@@ -12,7 +12,6 @@
 #import "ManageViewController.h"
 #import "SettingViewController.h"
 #import "MoreLib.h"
-#import "BiGuanVC.h"
 #import "KouZhaoVC.h"
 #import "FastWord-Swift.h"
 
@@ -35,6 +34,8 @@
 
 @property (nonatomic, retain) NSMutableArray *summaryList;
 @property (nonatomic, retain) UICollectionView *collectionView;
+@property (nonatomic, retain) HWCollectionViewFlowLayout *flowLayout;
+@property (nonatomic, strong) UILongPressGestureRecognizer *longPress;
 
 @end
 
@@ -70,6 +71,8 @@
     self.cc_navigationBarHidden = YES;
     
     HWCollectionViewFlowLayout *flow = HWCollectionViewFlowLayout.new;
+    
+    self.flowLayout = flow;
     flow.delegate = self;
     CGRect frame = CGRectMake(0, 0, WIDTH(), self.cc_displayView.height - RH(150));
     UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:frame collectionViewLayout:flow];
@@ -80,6 +83,8 @@
     [self.cc_displayView addSubview:collectionView];
     _collectionView = collectionView;
     
+    _longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(lonePressMoving:)];
+    [self.collectionView addGestureRecognizer:_longPress];
 //    noteScrollView = ccs.ScrollView
 //    .cc_frame(0, 0, WIDTH(), self.cc_displayView.height - RH(150))
 //    .cc_addToView(self);
@@ -91,7 +96,7 @@
 //    [noteScrollView cc_addSubview:noteGroup];
     
     CC_Button *btn = ccs.Button;
-    btn.cc_frame(RH(10),self.cc_displayView.height - RH(149),WIDTH()-RH(20),RH(50))
+    btn.cc_frame(RH(10),self.cc_displayView.height - RH(148),WIDTH()-RH(20),RH(50))
     .cc_setTitleColorForState(UIColor.blackColor,UIControlStateNormal)
     .cc_setNormalTitle(Language.newText)
     .cc_backgroundColor(RGB(242, 242, 242))
@@ -141,6 +146,88 @@
     
 }
 
+- (void)collectionView:(UICollectionView *)collectionView moveItemAtIndexPath:(nonnull NSIndexPath *)sourceIndexPath toIndexPath:(nonnull NSIndexPath *)destinationIndexPath
+{
+    /***2中排序方式，第一种只是交换2个cell位置，第二种是将前面的cell都往后移动一格，再将cell插入指定位置***/
+   // first
+//    [self.dataArray exchangeObjectAtIndex:sourceIndexPath.item withObjectAtIndex:destinationIndexPath.item];
+    
+    // second
+    id objc = [noteList objectAtIndex:sourceIndexPath.item];
+    //从资源数组中移除该数据
+    NSMutableArray *tempArray = noteList.mutableCopy;
+    [tempArray removeObject:objc];
+    //将数据插入到资源数组中的目标位置上
+    [tempArray insertObject:objc atIndex:destinationIndexPath.item];
+    noteList = tempArray.copy;
+    
+    /**保存数据顺序**/
+//    [ZKTool cacheUserValue:self.dataArray.copy key:cellOrder_key];
+    [self.collectionView reloadData];
+}
+
+#pragma mark ---- UILongPressGestureRecognizer ---
+- (void)lonePressMoving:(UILongPressGestureRecognizer *)longPress
+{
+    switch (_longPress.state) {
+        case UIGestureRecognizerStateBegan: {
+            {
+                NSIndexPath *selectIndexPath = [self.collectionView indexPathForItemAtPoint:[_longPress locationInView:self.collectionView]];
+               //判断手势落点位置是否在路径上
+                if (selectIndexPath == nil) { break; }
+
+                // 找到当前的cell
+//                self.pressCell = (ZKCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:selectIndexPath];
+//                [self starLongPress:self.pressCell];
+
+                NoteModel *model = noteList[selectIndexPath.row];
+                [ccs.alert showAltOn:self title:[ccs string:@"要删除 %@ 吗？",model.summary] msg:nil bts:@[@"确定",@"取消"] block:^(int index, NSString * _Nonnull name) {
+                    if (index == 0) {
+                        [self deleteIndex:selectIndexPath.row];
+                    }
+                }];
+            }
+            break;
+        }
+        case UIGestureRecognizerStateChanged: {
+//            [self.collectionView updateInteractiveMovementTargetPosition:[longPress locationInView:_collectionView]];
+            break;
+        }
+        case UIGestureRecognizerStateEnded: {
+//            [self.collectionView endInteractiveMovement];
+//            [self endAnimation];
+            break;
+        }
+//        default: [self.collectionView cancelInteractiveMovement];
+//            [self endAnimation];
+            break;
+        case UIGestureRecognizerStatePossible: {
+                
+            break;
+        }
+        case UIGestureRecognizerStateCancelled: {
+            
+            break;
+        }
+        case UIGestureRecognizerStateFailed: {
+            
+            break;
+        }
+    }
+}
+
+- (void)deleteIndex:(NSUInteger)index {
+    [NoteStore deleteSummaryModel:noteList[index]];
+    [NoteStore deleteContentModel:noteList[index]];
+    [ccs gotoThread:^{
+
+        self->noteList = [NoteStore getList];
+        [ccs gotoMain:^{
+            [self.collectionView reloadData];
+        }];
+    }];
+}
+
 - (void)cc_viewDidLoad {
     
     TEXT_NEW = [Language newText];
@@ -149,11 +236,12 @@
     TEXT_RECOMMAND = [Language recommandText];
     TEXT_ABOUT = [Language aboutText];
     
-    if (Language.isChinese) {
-        [menuGroup updateLabels:@[TEXT_MANAGE, TEXT_RECOMMAND, TEXT_ABOUT] selected:nil];
-    } else {
-        [menuGroup updateLabels:@[TEXT_MANAGE, TEXT_ABOUT] selected:nil];
-    }
+//    if (Language.isChinese) {
+//        [menuGroup updateLabels:@[TEXT_MANAGE, TEXT_RECOMMAND, TEXT_ABOUT] selected:nil];
+//    } else {
+//        [menuGroup updateLabels:@[TEXT_MANAGE, TEXT_ABOUT] selected:nil];
+//    }
+    [menuGroup updateLabels:@[TEXT_RECOMMAND, TEXT_ABOUT] selected:nil];
     
     [self presentNew];
     
@@ -229,8 +317,10 @@
             AboutViewController *vc = [ccs init:AboutViewController.class];
             [ccs pushViewController:vc];
         } else if ([name isEqualToString:TEXT_MANAGE]) {
-            ManageViewController *vc = [ccs init:ManageViewController.class];
-            [ccs pushViewController:vc];
+            _flowLayout.defaultColumnCount = 3;
+            [_collectionView reloadData];
+//            ManageViewController *vc = [ccs init:ManageViewController.class];
+//            [ccs pushViewController:vc];
         } else if ([name isEqualToString:TEXT_SETTING]) {
             SettingViewController *vc = [ccs init:SettingViewController.class];
             [ccs pushViewController:vc];
@@ -246,6 +336,7 @@
 
 - (void)presentNew {
     InputViewController *vc = [ccs init:InputViewController.class];
+//    [ccs pushViewController:vc];
     [ccs presentViewController:vc withNavigationControllerStyle:UIModalPresentationFullScreen];
 }
 

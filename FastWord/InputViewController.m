@@ -77,6 +77,8 @@
         [sampleButton setBackgroundColor:noteColors[_summaryModel.colorIndex]];
     } else if (_summaryModel) {
         
+        colorIndex = _contentModel.colorIndex;
+        
         _contentModel = [NoteStore getContentModelWithSummaryModel:_summaryModel];
         isUpdate = YES;
         
