@@ -278,9 +278,9 @@
             NoteModel *model = self->noteList[i];
             NSString *summary = model.summary;
             CCLOG(@"%d", (int)SettingManage.shared.maxTextCount);
-            if (summary.length > 100) {
-                summary = [summary substringToIndex:SettingManage.shared.maxTextCount];
-            }
+//            if (summary.length > 100) {
+//                summary = [summary substringToIndex:SettingManage.shared.maxTextCount];
+//            }
             model.summary = summary;
             
             [summaryList addObject:summary];
