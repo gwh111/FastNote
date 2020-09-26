@@ -219,13 +219,9 @@
 - (void)deleteIndex:(NSUInteger)index {
     [NoteStore deleteSummaryModel:noteList[index]];
     [NoteStore deleteContentModel:noteList[index]];
-    [ccs gotoThread:^{
-
-        self->noteList = [NoteStore getList];
-        [ccs gotoMain:^{
-            [self.collectionView reloadData];
-        }];
-    }];
+    self->noteList = [NoteStore getList];
+    [self.collectionView reloadData];
+    
 }
 
 - (void)cc_viewDidLoad {
