@@ -183,7 +183,10 @@
                 NoteModel *model = noteList[selectIndexPath.row];
                 [ccs showAltOn:self title:[ccs string:@"要删除 %@ 吗？",model.summary] msg:nil bts:@[@"确定",@"取消"] block:^(int index, NSString * _Nonnull name) {
                     if (index == 0) {
-                        [self deleteIndex:selectIndexPath.row];
+                        [NoteStore deleteSummaryModel:model];
+                        [NoteStore deleteContentModel:model];
+                        self->noteList = [NoteStore getList];
+                        [self.collectionView reloadData];
                     }
                 }];
             }
@@ -219,13 +222,9 @@
 - (void)deleteIndex:(NSUInteger)index {
     [NoteStore deleteSummaryModel:noteList[index]];
     [NoteStore deleteContentModel:noteList[index]];
-    [ccs gotoThread:^{
-
-        self->noteList = [NoteStore getList];
-        [ccs gotoMain:^{
-            [self.collectionView reloadData];
-        }];
-    }];
+    self->noteList = [NoteStore getList];
+    [self.collectionView reloadData];
+    
 }
 
 - (void)cc_viewDidLoad {
