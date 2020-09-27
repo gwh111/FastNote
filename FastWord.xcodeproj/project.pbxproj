@@ -34,10 +34,6 @@
 		D8AD586D2373EEEF00B3E9A8 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD586C2373EEEF00B3E9A8 /* SettingViewController.m */; };
 		D8AD58702374091200B3E9A8 /* ManageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD586F2374091200B3E9A8 /* ManageTableViewCell.m */; };
 		D8AD58732374183E00B3E9A8 /* SettingManage.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD58722374183E00B3E9A8 /* SettingManage.m */; };
-		D8AD58792375142700B3E9A8 /* MoreLib.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD58752375142700B3E9A8 /* MoreLib.m */; };
-		D8AD587A2375142700B3E9A8 /* MoreLibV.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD58772375142700B3E9A8 /* MoreLibV.m */; };
-		D8AD587C237518AC00B3E9A8 /* fadeToBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = D8AD587B237518AC00B3E9A8 /* fadeToBottom.png */; };
-		D8AD587E237518C500B3E9A8 /* fadeToUp.png in Resources */ = {isa = PBXBuildFile; fileRef = D8AD587D237518C500B3E9A8 /* fadeToUp.png */; };
 		D8EE18AF23EC2A020089AD52 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EE18AE23EC2A010089AD52 /* Data.m */; };
 /* End PBXBuildFile section */
 
@@ -111,12 +107,6 @@
 		D8AD586F2374091200B3E9A8 /* ManageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManageTableViewCell.m; sourceTree = "<group>"; };
 		D8AD58712374183E00B3E9A8 /* SettingManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingManage.h; sourceTree = "<group>"; };
 		D8AD58722374183E00B3E9A8 /* SettingManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingManage.m; sourceTree = "<group>"; };
-		D8AD58752375142700B3E9A8 /* MoreLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreLib.m; sourceTree = "<group>"; };
-		D8AD58762375142700B3E9A8 /* MoreLibV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreLibV.h; sourceTree = "<group>"; };
-		D8AD58772375142700B3E9A8 /* MoreLibV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreLibV.m; sourceTree = "<group>"; };
-		D8AD58782375142700B3E9A8 /* MoreLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreLib.h; sourceTree = "<group>"; };
-		D8AD587B237518AC00B3E9A8 /* fadeToBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fadeToBottom.png; sourceTree = "<group>"; };
-		D8AD587D237518C500B3E9A8 /* fadeToUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fadeToUp.png; sourceTree = "<group>"; };
 		D8EE18AD23EC2A010089AD52 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		D8EE18AE23EC2A010089AD52 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				D80450792370338F00926402 /* main.m */,
-				D8AD58742375141000B3E9A8 /* recommand */,
 				D804507B2370338F00926402 /* AppDelegate.h */,
 				D804507C2370338F00926402 /* AppDelegate.m */,
 				D804507E2370338F00926402 /* FastWord-prefix.pch */,
@@ -259,19 +248,6 @@
 				D86FA9422375347C0009FCAA /* 120.png */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		D8AD58742375141000B3E9A8 /* recommand */ = {
-			isa = PBXGroup;
-			children = (
-				D8AD587D237518C500B3E9A8 /* fadeToUp.png */,
-				D8AD587B237518AC00B3E9A8 /* fadeToBottom.png */,
-				D8AD58782375142700B3E9A8 /* MoreLib.h */,
-				D8AD58752375142700B3E9A8 /* MoreLib.m */,
-				D8AD58762375142700B3E9A8 /* MoreLibV.h */,
-				D8AD58772375142700B3E9A8 /* MoreLibV.m */,
-			);
-			path = recommand;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,9 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D804507F2370338F00926402 /* FastWord-prefix.pch in Resources */,
-				D8AD587E237518C500B3E9A8 /* fadeToUp.png in Resources */,
 				D802D2D12377A3770018C6A1 /* README.md in Resources */,
-				D8AD587C237518AC00B3E9A8 /* fadeToBottom.png in Resources */,
 				D86FA9442375347C0009FCAA /* 120.png in Resources */,
 				D804508A2370339100926402 /* LaunchScreen.storyboard in Resources */,
 				D80450872370339100926402 /* Assets.xcassets in Resources */,
@@ -463,12 +437,10 @@
 				D8AD585B23727B4700B3E9A8 /* Language.m in Sources */,
 				D8AD586A2373D48100B3E9A8 /* ManageViewController.m in Sources */,
 				D892C4EB24DFBC35008F108B /* ItemCollectionView.swift in Sources */,
-				D8AD587A2375142700B3E9A8 /* MoreLibV.m in Sources */,
 				D8AD58642372AEAC00B3E9A8 /* NoteModel.m in Sources */,
 				D8AD58732374183E00B3E9A8 /* SettingManage.m in Sources */,
 				D892C4E924DF7E94008F108B /* HWCollectionViewFlowLayout.swift in Sources */,
 				D80450822370338F00926402 /* HomeViewController.m in Sources */,
-				D8AD58792375142700B3E9A8 /* MoreLib.m in Sources */,
 				D804507D2370338F00926402 /* AppDelegate.m in Sources */,
 				D8AD58702374091200B3E9A8 /* ManageTableViewCell.m in Sources */,
 				D804507A2370338F00926402 /* main.m in Sources */,

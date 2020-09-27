@@ -1,44 +1,32 @@
 PODS:
-  - bench_ios (2.0.2):
-    - bench_ios/C (= 2.0.2)
-    - bench_ios/CC_CoreFoundation (= 2.0.2)
-    - bench_ios/CC_Foundation (= 2.0.2)
-    - bench_ios/CC_Function (= 2.0.2)
-    - bench_ios/CC_Kit (= 2.0.2)
-    - bench_ios/CC_Lib (= 2.0.2)
-    - bench_ios/debugPlugin (= 2.0.2)
-  - bench_ios/C (2.0.2)
-  - bench_ios/CC_CoreFoundation (2.0.2)
-  - bench_ios/CC_Foundation (2.0.2)
-  - bench_ios/CC_Function (2.0.2)
-  - bench_ios/CC_Kit (2.0.2)
-  - bench_ios/CC_Lib (2.0.2)
-  - bench_ios/debugPlugin (2.0.2)
+  - bench_ios (2.2.3):
+    - bench_ios/CC_Core (= 2.2.3)
+  - bench_ios/CC_Core (2.2.3)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - More (1.0.12):
+    - bench_ios
 
 DEPENDENCIES:
-  - "bench_ios (from `https://apple@huored.gicp.net:8088/svn/bench_ios/trunk/bench_ios_net/bench_ios`)"
+  - bench_ios
   - FMDB
+  - More (from `/Users/Shared/PM2/hub_ios/gwh111_hub_ios/Libs/More/tags/1.0.12/More.podspec`)
 
 SPEC REPOS:
   trunk:
+    - bench_ios
     - FMDB
 
 EXTERNAL SOURCES:
-  bench_ios:
-    :svn: "https://apple@huored.gicp.net:8088/svn/bench_ios/trunk/bench_ios_net/bench_ios"
-
-CHECKOUT OPTIONS:
-  bench_ios:
-    :revision: '1457'
-    :svn: "https://apple@huored.gicp.net:8088/svn/bench_ios/trunk/bench_ios_net/bench_ios"
+  More:
+    :podspec: "/Users/Shared/PM2/hub_ios/gwh111_hub_ios/Libs/More/tags/1.0.12/More.podspec"
 
 SPEC CHECKSUMS:
-  bench_ios: 02ddaac14a71f7fc5907068850ae470bc551183f
+  bench_ios: 3a5bac5308c102085370aa6f8a4f6e15ee7b1102
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  More: 4d456866c8a7ff23e972e4868e76fd7ca419a9e9
 
-PODFILE CHECKSUM: a3cc3568b86b1aa352a6541f6882e5dd3a394242
+PODFILE CHECKSUM: 9c49b9b6211a9336e3e5240902debb6b4586b1e6
 
 COCOAPODS: 1.9.1

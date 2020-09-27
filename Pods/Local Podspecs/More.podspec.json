@@ -1,0 +1,25 @@
+{
+  "name": "More",
+  "version": "1.0.12",
+  "summary": "summary",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "gwh111 <173695508@qq.com>": "email"
+  },
+  "homepage": "https://github.com/gwh111/bench_ios",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/gwh111/hub_ios.git",
+    "tag": "More-1.0.12"
+  },
+  "source_files": "Libs/More/More/More/More/**/*.{h,m}",
+  "dependencies": {
+    "bench_ios": [
+
+    ]
+  }
+}

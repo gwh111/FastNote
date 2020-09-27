@@ -11,7 +11,7 @@
 #import "AboutViewController.h"
 #import "ManageViewController.h"
 #import "SettingViewController.h"
-#import "MoreLib.h"
+#import "ccs+More.h"
 #import "KouZhaoVC.h"
 #import "FastWord-Swift.h"
 
@@ -181,7 +181,7 @@
 //                [self starLongPress:self.pressCell];
 
                 NoteModel *model = noteList[selectIndexPath.row];
-                [ccs.alert showAltOn:self title:[ccs string:@"要删除 %@ 吗？",model.summary] msg:nil bts:@[@"确定",@"取消"] block:^(int index, NSString * _Nonnull name) {
+                [ccs showAltOn:self title:[ccs string:@"要删除 %@ 吗？",model.summary] msg:nil bts:@[@"确定",@"取消"] block:^(int index, NSString * _Nonnull name) {
                     if (index == 0) {
                         [self deleteIndex:selectIndexPath.row];
                     }
@@ -317,7 +317,7 @@
             AboutViewController *vc = [ccs init:AboutViewController.class];
             [ccs pushViewController:vc];
         } else if ([name isEqualToString:TEXT_MANAGE]) {
-            _flowLayout.defaultColumnCount = 3;
+//            _flowLayout.defaultColumnCount = 3;
             [_collectionView reloadData];
 //            ManageViewController *vc = [ccs init:ManageViewController.class];
 //            [ccs pushViewController:vc];
@@ -325,7 +325,7 @@
             SettingViewController *vc = [ccs init:SettingViewController.class];
             [ccs pushViewController:vc];
         } else if ([name isEqualToString:TEXT_RECOMMAND]) {
-            [MoreLib addMoreLibAt:self.view];
+            [self.view addSubview:ccs.more.popV];
         } else if ([name isEqualToString:@"抢口罩"]) {
             [ccs pushViewController:KouZhaoVC.new];
 //            [ccs pushViewController:BiGuanVC.new];

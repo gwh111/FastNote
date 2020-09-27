@@ -7,13 +7,16 @@
 
 #import <Foundation/Foundation.h>
 #import "CC_HttpResponseModel.h"
-#import "CC_Lib+NSDictionary.h"
+#import "NSDictionary+CC_Foundation.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 // overload request
 
-@interface CC_Service : NSObject
+@interface CC_Service : CC_Object
+
+@property (nonatomic, retain) NSString *mainURL; //mainURLs[ccs.getEnvironment];
+@property (nonatomic, retain) NSArray *mainURLs;
 
 @property (nonatomic, retain) NSMutableDictionary *requestMap;
 @property (nonatomic, retain) NSMutableDictionary *responseMap;

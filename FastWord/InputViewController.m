@@ -259,9 +259,9 @@
     [textView resignFirstResponder];
 
     _contentModel.content = content;
-    if (content.length > 100) {
-        content = [content substringToIndex:SettingManage.shared.MAX_TEXT_COUNT];
-    }
+//    if (content.length > 100) {
+//        content = [content substringToIndex:SettingManage.shared.MAX_TEXT_COUNT];
+//    }
     _summaryModel.summary = content;
     _contentModel.summary = content;
     
